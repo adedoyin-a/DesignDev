@@ -362,6 +362,141 @@ footer a:hover{
   color: #29E7CD;
 }
 
+@media (max-width:1024px){
+  *{
+    font-size: 14px;
+  }
+  .logo{
+  /* width: 50%; */
+  height: 36px;
+  margin-left: 5vw;
+}
+nav{
+  margin-right: 5vw;
+}
+#welcome-section{
+  margin: 0 5vw;
+  /* padding: 2.5vh 0; */
+  width: 90vw;
+  margin-bottom: 5vh;
+}
+.portrait{
+  width: 36vw;
+}
+.hero-text{
+  width: 40vw;
+}
+  h1{
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+.usp{
+  height: 18vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.usp-container{
+  height: 12vh;
+  margin: 0 10vw;
+}
+.usp-message{
+  font-size: 1.4rem;
+  margin: 5px 0;
+  /* margin-bottom:8px; */
+  /* border: 1px solid red; */
+}
+
+#projects{
+  padding: 50px 0;
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+/* #portfolio-grid{
+  column-gap: 2vw;
+ row-gap: 3vw;
+ margin-bottom: 50px;
+} */
+.project{
+ width: 21vw;
+ /* border-radius: 10px; */
+ /* background-color: white; */
+}
+.project-tile{
+ width: 21vw;
+ height: 18vw;
+ border-radius: 10px 10px 0 0;
+ object-fit: cover;
+}
+.project-title-wrapper{
+ height: 94px;
+margin-top: -8px;
+margin-bottom: 0px;
+}
+
+.skills{
+margin: 0 5vw;
+}
+
+#skills-grid{
+row-gap: 2vw;
+column-gap: 1.875vw;
+/* place-items: center; */
+}
+
+.skill-wrapper{
+background-color: #1C4640;
+width: 14.5vw;
+padding-left: 2vw;
+padding-right: 2vw;
+border-radius: 10px;
+}
+
+/* #contact-me-section{
+  display: block;
+  width: 80vw;
+  margin: 0 10vw;
+  padding: 0;
+  padding-top: 6vh;
+  padding-bottom: 0;
+  
+}
+.contact-me-text{
+  width: 80vw;
+}
+
+.contact-me-text h2:nth-of-type(2){
+  margin-top: 3vh;
+}
+
+.social-icon{
+  width: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.contact-form{
+  width: 80vw !important;
+  margin-bottom: 5vh;
+}
+
+.contact-form h2{
+  margin-top: 3vh;
+}
+input, textarea{
+  width: 80vw !important;
+} */
+
+.footer-ruler{
+  margin: 0 5vw;
+}
+footer{
+  margin: 20px 5vw;
+}
+
+}
+
 @media screen and (max-width:840px){
   *{
     font-size: 14px;
