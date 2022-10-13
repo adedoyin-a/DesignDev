@@ -349,7 +349,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-  border: 3px solid #29E7CD;
+  border: 2px solid #29E7CD;
   background-color: transparent;
   color: #29E7CD;
   cursor: hand;
@@ -816,7 +816,7 @@ ul li{
   /* font-size: 10px; */
 }
 ul li a{
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .logo{

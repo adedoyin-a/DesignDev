@@ -322,7 +322,7 @@ Are you hiring or looking to collaborate with a passionate and enthusiastic Prod
         </div>
         <div id="contact-form" class="contact-form">
           <h2>Get in Touch!</h2>
-          <form method="post" enctype="text/plain" data-netlify="true" name="contact-messages">
+          <form method="POST" enctype="application/x-www-form-urlencoded" data-netlify="true" name="contact">
             <label for="fname">First Name</label>
             <br>
             <input type="text" id="fname" name="fname" placeholder="Enter your first name" required/>
@@ -339,7 +339,7 @@ Are you hiring or looking to collaborate with a passionate and enthusiastic Prod
             <br>
             <textarea id="message" name="message" placeholder="Compose Message" rows="8" col="50" required></textarea>
 <br>
-            <input type="submit" id="submit" value="Send Message">
+            <input type="submit" id="submit" value="Send Message" name="submit">
           </form>
         </div>
 
