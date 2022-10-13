@@ -784,9 +784,7 @@ footer{
 }
 
 @media screen and (max-width:450px){
-  *{
-    font-size: 14px;
-  }
+
 #navbar{
    /* height: 50px; */
    height: 9%;
