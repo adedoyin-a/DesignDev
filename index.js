@@ -5,7 +5,7 @@ function toggleHamburger (){
     if(icon.classList.contains("fa-bars")){
         icon.classList.replace("fa-bars", "fa-xmark");
         document.getElementById("navbar").style.backgroundColor="#131B1A";
-        document.getElementById("navbar").style.height="35%";
+        document.getElementById("navbar").style.height="20%";
         document.querySelector("ul").style.display = "block";
     }
     else{
