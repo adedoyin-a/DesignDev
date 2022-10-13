@@ -46,7 +46,12 @@ ul li a:hover{
   margin-bottom: 17px;
   margin-left: 10vw;
 }
-
+#hamburger{
+  font-size: 1.25rem;
+  margin-top: 20px;
+  /* display: none; */
+  visibility: hidden;
+}
 nav{
   margin-top: auto;
   margin-bottom: auto;
@@ -158,8 +163,8 @@ border: 0;
 }
 .project{
  width: 18.5vw;
- /* border-radius: 10px; */
- /* background-color: white; */
+ border-radius: 10px;
+ background-color: white;
 }
 .project-tile{
  width: 18.5vw;
@@ -183,7 +188,8 @@ padding: 20px 10px;
 }
 
 .project-title-wrapper a:hover{
-  color: #A8C6C2;
+  color: #808080;
+  /* font-weight: 400; */
 }
 
 #about{
@@ -202,30 +208,32 @@ padding-right: 10vw; */
 #skills-grid{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
 row-gap: 2vw;
 column-gap: 1.875vw;
-/* place-items: center; */
+place-items: center;
 margin-bottom: 50px;
 }
 
 .skill-wrapper{
 background-color: #1C4640;
 width: 14.5vw;
-padding-left: 2vw;
-padding-right: 2vw;
-border-radius: 10px;
+padding: 15px 1vw;
+border-radius: 8px;
+transition: all 0.2s;
 }
 .skill-wrapper p{
 text-align: center;
-margin: 10px 0;
+margin: 0;
+/* margin: 12px 0; */
 /* border: 1px solid red; */
 }
 
 .skill-wrapper:hover{
 background-color: transparent;
 color: #29E7CD;
-border: 2px solid #29E7CD;
+border: 1px solid #29E7CD;
+padding: 14px 1vw;
 }
 #recommendations-section{
 padding: 50px 0;
@@ -445,13 +453,15 @@ column-gap: 1.875vw;
 /* place-items: center; */
 }
 
-.skill-wrapper{
+/* .skill-wrapper{
 background-color: #1C4640;
 width: 14.5vw;
 padding-left: 2vw;
 padding-right: 2vw;
 border-radius: 10px;
-}
+} */
+
+
 
 /* #contact-me-section{
   display: block;
@@ -502,11 +512,12 @@ footer{
     font-size: 14px;
   }
 #navbar{
-   height: 60px;
-}
-ul li{
-  margin-right: 12px;
-  /* border: 1px solid red; */
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 55%;
+   height: fit-content;
+   /* background-color:#131B1A; */
+   /* border: 1px solid red; */
 }
 
 .logo{
@@ -515,7 +526,29 @@ ul li{
   margin-top: 15px;
   margin-bottom: 15px;
 }
+#hamburger{
+  visibility: visible;
+  margin-left: 5vw;
+}
+/* ul li{
+  margin-right: 12px;
+  border: 1px solid red;
+} */
+ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 5vw;
+  /* visibility: hidden;
+  height: 0; */
+  /* position: relative;
+  width: 100vw; */
+  display: none;
+}
 
+ul li{
+  display: block;
+  margin-bottom: 15px;
+}
 main{
   top: 60px;
   /* border: 1px solid blue; */
@@ -528,7 +561,7 @@ main{
   padding: 10vh 0;
 }
 .hero{
-  display: block;
+  flex-direction: column;
   text-align: center;
 }
 .portrait{
@@ -565,7 +598,7 @@ h1{
 }
 .usp{
   /* background: url(https://i.postimg.cc/nzGBn56g/wavy-pattern.png); */
-  height: 16vh;
+  height: 18vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
   margin: 0;
@@ -573,13 +606,13 @@ h1{
   
 }
 .usp-container{
-  height: 12vh;
+  height: 14vh;
   padding: 3.5vh 6vw;
   text-align: center;
   /* border: 1px solid orange; */
 }
 .usp-message{
-  font-size: 1.4rem;
+  font-size: 1.125rem;
   margin: 0;
   /* border: 1px solid red; */
 }
@@ -653,9 +686,10 @@ margin-bottom: 50px;
 .skill-wrapper{
 background-color: #1C4640;
 width: 24vw;
-padding-left: 2vw;
-padding-right: 2vw;
-border-radius: 8px;
+padding: 12px 2vw;
+/* padding-left: 2vw;
+padding-right: 2vw; */
+/* border-radius: 8px; */
 }
 /* 
 .skill-wrapper:hover{
@@ -753,11 +787,21 @@ footer{
     font-size: 14px;
   }
 #navbar{
-   height: 50px;
+   /* height: 50px; */
+   height: fit-content;
 }
+#navbar{
+  column-gap: 57.5%;
+}
+
+#hamburger{
+ margin-left: 0;
+}
+
 ul li{
-  margin-right: 8px;
-  font-size: 10px;
+  margin-right: 0;
+  margin-left: 10vw;
+  /* font-size: 10px; */
 }
 ul li a{
   font-size: 12px;
@@ -784,7 +828,7 @@ main{
   padding: 7vh 0;
 }
 .hero{
-  display: block;
+  flex-direction: column;
   text-align: center;
 }
 .portrait{
@@ -867,8 +911,8 @@ h2{
 .project{
  width: 80vw;
  height: 80vw;
- /* border-radius: 10px; */
- /* background-color: white; */
+ border-radius: 10px;
+ background-color: white;
 }
 .project-tile{
  width: 80vw;
@@ -897,7 +941,7 @@ padding-right: 10vw; */
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-row-gap: 4vh;
+row-gap: 2vh;
 column-gap: 4vw;
 place-items: center;
 margin-bottom: 50px;
@@ -906,8 +950,9 @@ margin-bottom: 50px;
 .skill-wrapper{
 background-color: #1C4640;
 width: 38vw;
-padding-left: 2vw;
-padding-right: 2vw;
+padding: 10px 2vw;
+/* padding-left: 2vw;
+padding-right: 2vw; */
 border-radius: 5px;
 }
 
