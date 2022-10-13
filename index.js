@@ -11,7 +11,7 @@ function toggleHamburger (){
     else{
         icon.classList.replace("fa-xmark", "fa-bars");
         document.getElementById("navbar").style.backgroundColor="#070600";
-        document.getElementById("navbar").style.height="15%";
+        document.getElementById("navbar").style.height="9%";
         document.querySelector("ul").style.display = "none";
     }
 };
