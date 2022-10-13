@@ -515,7 +515,7 @@ footer{
    display: grid;
    grid-template-columns: 1fr 1fr;
    column-gap: 55%;
-   height: 20%;
+   height: 15%;
    /* height: 70px; */
    /* background-color:#131B1A; */
    /* border: 1px solid red; */
@@ -789,7 +789,7 @@ footer{
   }
 #navbar{
    /* height: 50px; */
-   height: 20%;
+   height: 15%;
 }
 #navbar{
   column-gap: 57.5%;
