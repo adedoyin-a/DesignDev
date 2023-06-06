@@ -575,6 +575,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 10%;
+  display: none;
    /* height: 70px; */
    /* background-color:#131B1A; */
    /* border: 1px solid red; */
