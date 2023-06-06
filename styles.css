@@ -34,6 +34,8 @@ ul li{
 }
 ul li .menu-items{
   position: absolute;
+  background-color: #070600;
+  padding: 1rem;
 }
 ul li .dropdown-menu .menu-items a{
   display: none;
