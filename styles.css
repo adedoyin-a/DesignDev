@@ -20,32 +20,60 @@ body{
    position: fixed;
    top: 0;
    z-index: 1;
+   /* overflow: hidden;
+   border: 1px solid red; */
 }
+
 ul li{
   list-style: none;
-  display: inline;
+  display: inline-block;
+  /* margin-top: 1.25rem; */
   margin-right: 20px;
+  vertical-align: top;
   /* border: 1px solid red; */
 }
+ul li .menu-items{
+  position: absolute;
+}
+ul li .dropdown-menu .menu-items a{
+  display: none;
+  width: fit-content;
+  padding: 0.25rem 0;
+}
+
+ul li .dropdown-menu:hover .menu-items a{
+  display: block;
+  width: fit-content;
+}
+
+ul li .dropdown-menu a i{
+  padding: 0 0.5rem;
+}
+
 ul li:last-of-type{
   margin-right: 0px;
 }
+
 a{
   text-decoration: none;
   color: white;
 }
 ul li a:hover{
-  border-bottom: 2px solid #29E7CD;
-  /* transition-timing-function: ease-in-out; */
-  /* transition: border-bottom 0.3s ease-in-out; */
+  /* text-decoration: underline 2px solid #29E7CD; */
+  border-bottom: 1px solid #29E7CD;
+  transition: border-bottom 0.3s ease-out;
 }
+
+
+
 .logo{
   /* width: 50%; */
   height: 46px;
-  margin-top: 17px;
-  margin-bottom: 17px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   margin-left: 10vw;
 }
+
 #hamburger{
   font-size: 1.25rem;
   margin-top: 20px;
@@ -150,36 +178,65 @@ border: 0;
 }
 .section-description{
  text-align: center;
- margin-bottom: 50px;
+ margin: 2.5rem;
 }
-
+.project-cat{
+  margin-bottom: 6rem;
+}
+.project-cat:last-of-type{
+  margin-bottom: 50px;
+}
 #portfolio-grid{
  display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr;
- grid-template-rows: 1fr 1fr;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: repeat(3, 1fr);
  column-gap: 2vw;
  row-gap: 3vw;
- margin-bottom: 50px;
+ /* border: 1px solid red; */
 }
+
 .project{
- width: 18.5vw;
+ /* old 4 col grid dimensions width: 18.5vw; */
+ width: 25.33vw;
  border-radius: 10px;
  background-color: white;
 }
 .project-tile{
- width: 18.5vw;
- height: 14.5vw;
+ /* old 4 col grid dimensions width: 18.5vw;
+ height: 14.5vw; */
+ width: 25.33vw;
+  height: 20.13vw;
  border-radius: 10px 10px 0 0;
  object-fit: cover;
 }
 .project-title-wrapper{
  height: 5.2vw;
 background-color: white;
-margin-top: -16px;
+/* margin-top: -16px; */
 border-radius: 0 0 10px 10px;
 text-align: center;
-padding: 20px 10px;
+margin: 0;
+padding: 0.5rem;
 }
+
+.new-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2vw;
+  row-gap: 3vw;
+  margin-bottom: 50px;
+}
+.new-grid .project{
+  width: 25.33vw;
+}
+
+.new-grid .project-tile{
+  width: 25.33vw;
+  height: 20.13vw;
+  /* border: 1px solid greenyellow; */
+}
+
 
 .project-title-wrapper a{
   color: #070600;
@@ -559,6 +616,11 @@ ul li{
 ul li:last-of-type{
   padding-bottom: 15px;
 }
+
+ul li .menu-items, #arrow{
+  display: none;
+}
+
 main{
   top: 60px;
   /* border: 1px solid blue; */
@@ -632,6 +694,9 @@ h1{
   width: 80vw;
   margin: 0 10vw;
 }
+.project-cat{
+  margin-bottom: 60px;
+}
 h2{
   font-size: 1.6rem;
 }
@@ -652,15 +717,37 @@ h2{
  grid-template-rows: 1fr 1fr 1fr 1fr;
  column-gap: 2vw;
  row-gap: 5vw;
- margin-bottom: 20px;
+ margin-bottom: 50px;
 }
-.project{
+.new-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2vw;
+  row-gap: 5vw;
+  margin-bottom: 50px;
+}
+
+.new-grid .project:last-of-type{
+  display: none;
+}
+
+/* .new-grid .project{
+  width: 25.33vw;
+} */
+
+/* .new-grid .project-tile{
+  width: 25.33vw;
+  height: 20.13vw;
+} */
+
+.project, .new-grid .project{
  width: 36vw;
  height: 41vw;
  /* border-radius: 10px; */
  /* background-color: white; */
 }
-.project-tile{
+.project-tile, .new-grid .project-tile{
  width: 36vw;
  height: 28vw;
  /* border-radius: 10px 10px 0 0; */
@@ -914,19 +1001,34 @@ h2{
  margin-bottom: 35px;
 }
 
-#portfolio-grid{
+#portfolio-grid, .new-grid{
  grid-template-columns: 1fr;
- grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ grid-template-rows: repear(2,1fr);
  row-gap: 3vh;
  margin-bottom: 20px;
 }
-.project{
+
+.new-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+  column-gap: 2vw;
+  row-gap: 5vh;
+  margin-bottom: 20px;
+}
+
+.project, .new-grid .project{
  width: 80vw;
  height: 80vw;
  border-radius: 10px;
  background-color: white;
 }
-.project-tile{
+
+.new-grid .project:last-of-type{
+  display:initial;
+}
+
+.project-tile, .new-grid .project-tile{
  width: 80vw;
  height: 60vw;
  /* border-radius: 10px 10px 0 0; */
