@@ -37,8 +37,18 @@
       <!-- <a href="javascript:void(0);"><i class="fa-solid fa-bars" id="hamburger"></i></a> -->
       <nav id="navigation">
         <ul class="nav-Links">
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
+          <li id="dropdown"><div class="dropdown-menu">
+            <a href="#projects">Portfolio<i class="fa-solid fa-caret-down" id="arrow"></i></a>
+            <div class="menu-items">
+              <a href="#projects">UI/UX Design</a>
+              <a href="#web-design">Web Design</a>
+              <a href="#branding">Branding</a>
+              <!-- <a href="#">Graphic Design</a> -->
+            </div>
+            </div>
+          </li>
+          <li><a href="#about">Skills</a></li>
+          <li><a href="#recommendations-section">Recommendations</a></li>
           <li><a href="#contact-me-section">Contact</a></li>
         </ul>
       </nav>
@@ -47,7 +57,7 @@
       <section id="welcome-section" class="hero">
         <div class="hero-text">
           <p class="name-introduction">Hello, I'm Adedoyin Adebayo</p>
-          <h1>Digital Product and Brand Identity Designer</h1>
+          <h1>Multi-Disciplinary Designer: Product Design, Web Design, and Branding</h1>
           <p>My journey to digital design began when I was an undergraduate at the university some years ago. 
             I discovered graphic design and fell in love with it. Later on, I took a college course on web page design and soon realized that I enjoyed it as well.
             Over the years, I have grown as a Designer. I believe that there is always something to learn and an opportunity to improve. Currently, I specialize in User Interface and User Experience Design (UI/UX) and Brand Identity Design. My tools include Figma, Adobe XD, Adobe Illustrator, Photoshop, HTML, CSS, Bootstrap, Javascript, etc.</p>
@@ -66,10 +76,146 @@ Designing Intuitive and Aesthetically Pleasing User Interfaces, Crafting Memorab
         </div>
       </div>
       <section id="projects" class="portfolio">
-        <h2 class="underlined-h2">Featured Projects</h2>
-        <hr class="h2-underline"/>
-        <p class="section-description">These are some of the user experience/user interface design, and web development projects I have worked on</p>
-        <div id="portfolio-grid">
+        <div class="project-cat">
+          <div class="headline">
+            <h2 class="underlined-h2">Featured Projects in UI-UX Design</h2>
+            <hr class="h2-underline"/>
+            <p class="section-description">These are some of the user experience/user interface design, and web development projects I have worked on</p>
+          </div>
+          
+          <div id="portfolio-grid">
+  
+            <div class="project eighteen">
+              <img src="https://i.postimg.cc/Hxc2TNYZ/FAN-Admin-mockup.jpg" alt="project cover image" class="project-tile" />
+              <!-- <img src="https://i.postimg.cc/FK9SPBkd/FAN-Admin-mockup2.jpg" alt="project cover image" class="project-tile" /> -->
+              <div class="project-title-wrapper"><a href="https://www.figma.com/proto/8picXSiF5KaXRJ7xyTcL3q/FAN-ERP-Procurement-Packaging-Division?type=design&node-id=13460-416845&viewport=273%2C209%2C0.02&scaling=min-zoom&starting-point-node-id=13460%3A416871" target="_blank">ERP Application: Admin Dashboard</a>
+              </div>
+            </div>  
+
+            <div class="project sixteen">
+              <img src="https://i.postimg.cc/gcgyLd5w/FAN-Vendor-Platform-mockup1.jpg" alt="project cover image" class="project-tile" />
+              <div class="project-title-wrapper"><a href="https://www.figma.com/proto/8picXSiF5KaXRJ7xyTcL3q/FAN-ERP-Procurement-Packaging-Division?type=design&node-id=11405-260811&viewport=717%2C-138%2C0.02&scaling=min-zoom&starting-point-node-id=13066%3A354708" target="_blank">ERP Application: Vendor Platform Dashboard</a>
+              </div>
+            </div>  
+
+            <div class="project seventeen">
+              <img src="https://i.postimg.cc/FzcqPRwx/FAN-Procurement-Officer-mockup2.jpg" alt="project cover image" class="project-tile" />
+              <!-- <img src="https://i.postimg.cc/vHmJ5YZC/FAN-Procurement-Officer-mockup.jpg" alt="project cover image" class="project-tile" /> -->
+              <div class="project-title-wrapper"><a href="https://www.figma.com/proto/8picXSiF5KaXRJ7xyTcL3q/FAN-ERP-Procurement-Packaging-Division?type=design&node-id=10256-200386&viewport=409%2C-97%2C0.02&scaling=min-zoom&starting-point-node-id=10472%3A226337" target="_blank">ERP Software: Procurement Management Dashboard</a>
+              </div>
+            </div>  
+
+            <div class="project two">
+              <img src="https://i.postimg.cc/DZqqdfrq/Buy-By-Raffle-Behance-Cover-Image-2.jpg alt="project cover image" class="project-tile" />
+              <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/151277807/BuyByRaffle-Ecommerce-UIUX-Case-Study">BuyByRaffle: Ecommerce UX Design</a>
+              </div>
+            </div>
+            
+            <div class="project seven">
+              <img src="https://i.postimg.cc/nrTsbpfS/fcc-cashtoken-VAS-dashboard-thumbnail.jpg" alt="project cover image" class="project-tile" />
+              <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/141598213/CashToken-Africa-Merchant-Dashboard-UI-Design">Merchant Dashboard UI Design</a>
+              </div>
+            </div>
+
+            <div class="project ten">
+              <img src="https://i.postimg.cc/pTBn0NTk/uccares-gift-card-thumbnail.jpg" alt="project cover image" class="project-tile" />
+              <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/141602083/Gift-Card-Company-Website-Landing-Page-UIUX-Design">Gift Card Landing Page UI Design</a>
+              </div>
+            </div>
+  
+            <div class="project three">
+              <img src="https://i.postimg.cc/bNXVsPbS/fcc-cashtoken-website-redesign-thumbnail.jpg" alt="project cover image" class="project-tile" />
+              <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/146605897/Parallax-Animation-Interaction-Design-Website-UIUX">CashToken UI + Interaction Design</a>
+              </div>
+            </div>
+            
+            <div class="project four">
+              <img src="https://i.postimg.cc/K8Dz3mH9/fcc-wisr-thumbnail.jpg" alt="project cover image" class="project-tile" />
+              <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/134701693/E-Book-Library-App-UIUX-Design">Wisr: eLibrary Mobile App UX Design</a>
+              </div>
+            </div>  
+                                                                                                                                        
+            <div class="project eleven">
+              <img src="https://i.postimg.cc/tgW6xnGK/burbessa-thumbnail.jpg" alt="project cover image" class="project-tile" />
+              <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/131317917/Burbessa-Online-Language-Learning">Burbessa: Online Language Learning Website UI Design</a>
+              </div>
+            </div>      
+       
+            <div class="project twelve">
+              <img src="https://i.postimg.cc/tCXSh5S9/fcc-i-Recipy-thumbnail.jpg" alt="project cover image" class="project-tile" />
+              <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/133974245/iRecipy-Food-Recipe-Mobile-App-UIUX-Design">Food Recipe Mobile App UI Design</a>
+              </div>
+            </div>  
+  
+  
+          <div class="project six">
+            <img src="https://i.postimg.cc/6QGBLwjJ/fcc-pencil-House-thumbnail.jpg" alt="project cover image" class="project-tile" />
+            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/131870099/Pencil-House-Furniture-Home-Goods-Ecommerce-UI-Design">Pencil House: Ecommerce Website UX Design</a>
+            </div>
+          </div>
+          
+          <div class="project eight">
+            <img src="https://i.postimg.cc/Lsz8F2zk/fcc-myfans-mylife-thumbnail.jpg" alt="project cover image" class="project-tile" />
+            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/143048027/Celebrity-Cash-Rewards-Website-UI-Design-%28Dark-Mode%29">MyFans, MyLife: UI & Interaction Design</a>
+            </div>
+          </div>
+  
+          </div>
+        </div>
+    
+        <div class="project-cat" id="web-design">
+          <div class="headline">
+            <h2 class="underlined-h2">Featured Projects in Web Design</h2>
+            <hr class="h2-underline"/>
+            <p class="section-description">These are some of the web design projects I've worked on</p>
+          </div>
+          <div class="new-grid">
+          
+
+          <div class="project one">
+            <img src="https://i.postimg.cc/k5fXpWK3/wisr-website-thumbnail.jpg" alt="project cover image" class="project-tile" />
+            <div class="project-title-wrapper"><a href="https://www.getwisr.netlify.app">Wisr: Landing Page Web Development</a>
+            </div>
+          </div>
+
+          <div class="project nineteen">
+            <img src="https://i.postimg.cc/52gzrQQN/rovet-website-mockup.jpg" alt="project cover image" class="project-tile" />
+            <div class="project-title-wrapper"><a href="https://www.rovetscientific.com//" target="_blank">Rovet Scientific Limited: Corporate Website</a>
+            </div>
+          </div>
+
+          <div class="project five">
+            <img src="https://i.postimg.cc/P5khMmkK/fcc-dazzle-collectibles-thumbnail.jpg" alt="project cover image" class="project-tile" />
+            <div class="project-title-wrapper"><a href="https://dazzle-eyewear.netlify.app/">Dazzle: eCommerce Website Design</a>
+            </div>
+          </div>
+
+        <!-- <div class="project nine">
+          <img src="https://i.postimg.cc/d1cSb94S/HSM-thumbnail.jpg" alt="project cover image" class="project-tile" />
+          <div class="project-title-wrapper"><a href="https://hsm-tribute.netlify.app/">High School Musical Tribute: Web Design</a>
+          </div>
+        </div> -->
+
+
+
+        </div>
+        </div>
+
+        <div class="project-cat" id="branding">
+          <div class="headline">
+            <h2 class="underlined-h2">Featured Projects in Branding</h2>
+            <hr class="h2-underline"/>
+            <p class="section-description">These are some of the brand identity design projects I've worked on</p>
+          </div>
+        
+        <div class="new-grid">
+
+          <div class="project fifteen">
+            <img src="https://i.postimg.cc/MGfcfkcV/Blue-Oceans-stationery-mockup-2.jpg" alt="project cover image" class="project-tile" />
+            <!-- <img src="https://mir-s3-cdn-cf.behance.net/projects/808/a4f572171850133.6475fe0a72dc5.png" alt="project cover image" class="project-tile" /> -->
+            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/171850133/Brand-Identity-Design-Blue-Ocean-Group">Blue Ocean Group: Brand Identity Design</a>
+            </div>
+          </div>
           
           <div class="project fourteen">
             <img src="https://mir-s3-cdn-cf.behance.net/projects/808/933f03171351293.Y3JvcCwzMzkzLDI2NTQsMCww.jpg" alt="project cover image" class="project-tile" />
@@ -78,88 +224,13 @@ Designing Intuitive and Aesthetically Pleasing User Interfaces, Crafting Memorab
           </div>
           
           <div class="project thirteen">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/04ea80171051101.Y3JvcCw2NzMzLDUyNjcsMCww.png" alt="project cover image" class="project-tile" />
+            <img src="https://i.postimg.cc/Kc9G4LCb/kids-express-thumbnail-small-size.jpg" alt="project cover image" class="project-tile" />
             <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/171051101/Brand-Identity-Packaging-Design-Childrens-Fashion">Kids' Express: Brand Identity Design</a>
             </div>
           </div>
-
-          <div class="project one">
-            <img src="https://i.postimg.cc/k5fXpWK3/wisr-website-thumbnail.jpg" alt="project cover image" class="project-tile" />
-            <div class="project-title-wrapper"><a href="https://www.getwisr.netlify.app">Wisr: Landing Page Web Development</a>
-            </div>
-          </div>
-          
-          <div class="project four">
-            <img src="https://i.postimg.cc/K8Dz3mH9/fcc-wisr-thumbnail.jpg" alt="project cover image" class="project-tile" />
-            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/134701693/E-Book-Library-App-UIUX-Design">Wisr: eLibrary Mobile App UX Design</a>
-            </div>
-          </div>  
-          
-          <div class="project seven">
-            <img src="https://i.postimg.cc/nrTsbpfS/fcc-cashtoken-VAS-dashboard-thumbnail.jpg" alt="project cover image" class="project-tile" />
-            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/141598213/CashToken-Africa-Merchant-Dashboard-UI-Design">Merchant Dashboard UI Design</a>
-            </div>
-          </div>
-          
-          <div class="project two">
-            <img src="https://i.postimg.cc/DZqqdfrq/Buy-By-Raffle-Behance-Cover-Image-2.jpg alt="project cover image" class="project-tile" />
-            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/151277807/BuyByRaffle-Ecommerce-UIUX-Case-Study">BuyByRaffle: Ecommerce UX Design</a>
-            </div>
-          </div>
-                                                                                                                                                                                                                                                                                                                                                                                                               
-                                                                                                                                                                                                                                                                                
-          <div class="project eleven">
-            <img src="https://i.postimg.cc/tgW6xnGK/burbessa-thumbnail.jpg" alt="project cover image" class="project-tile" />
-            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/131317917/Burbessa-Online-Language-Learning">Burbessa: Online Language Learning Website UI Design</a>
-            </div>
-          </div>
-                                                                                                                                    
-          <div class="project ten">
-            <img src="https://i.postimg.cc/pTBn0NTk/uccares-gift-card-thumbnail.jpg" alt="project cover image" class="project-tile" />
-            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/141602083/Gift-Card-Company-Website-Landing-Page-UIUX-Design">Gift Card Landing Page UI Design</a>
-            </div>
-          </div>
-  
-
-          <div class="project five">
-            <img src="https://i.postimg.cc/P5khMmkK/fcc-dazzle-collectibles-thumbnail.jpg" alt="project cover image" class="project-tile" />
-            <div class="project-title-wrapper"><a href="https://dazzle-eyewear.netlify.app/">Dazzle: eCommerce Website Design</a>
-            </div>
-          </div>
-
-          <div class="project three">
-            <img src="https://i.postimg.cc/bNXVsPbS/fcc-cashtoken-website-redesign-thumbnail.jpg" alt="project cover image" class="project-tile" />
-            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/146605897/Parallax-Animation-Interaction-Design-Website-UIUX">CashToken UI + Interaction Design</a>
-            </div>
-          </div>
-
-          
-     
-          <div class="project twelve">
-            <img src="https://i.postimg.cc/tCXSh5S9/fcc-i-Recipy-thumbnail.jpg" alt="project cover image" class="project-tile" />
-            <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/133974245/iRecipy-Food-Recipe-Mobile-App-UIUX-Design">Food Recipe Mobile App UI Design</a>
-            </div>
-          </div>  
-
-
-        <div class="project six">
-          <img src="https://i.postimg.cc/6QGBLwjJ/fcc-pencil-House-thumbnail.jpg" alt="project cover image" class="project-tile" />
-          <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/131870099/Pencil-House-Furniture-Home-Goods-Ecommerce-UI-Design">Pencil House: Ecommerce Website UX Design</a>
-          </div>
         </div>
-        
-        <div class="project eight">
-          <img src="https://i.postimg.cc/Lsz8F2zk/fcc-myfans-mylife-thumbnail.jpg" alt="project cover image" class="project-tile" />
-          <div class="project-title-wrapper"><a href="https://www.behance.net/gallery/143048027/Celebrity-Cash-Rewards-Website-UI-Design-%28Dark-Mode%29">MyFans, MyLife: UI & Interaction Design</a>
-          </div>
-        </div>
-        <div class="project nine">
-          <img src="https://i.postimg.cc/d1cSb94S/HSM-thumbnail.jpg" alt="project cover image" class="project-tile" />
-          <div class="project-title-wrapper"><a href="https://hsm-tribute.netlify.app/">High School Musical Tribute: Web Design</a>
-          </div>
         </div>
 
-        </div>
       </section>
       <section id="about">
         <div class="skills">
@@ -277,6 +348,9 @@ Designing Intuitive and Aesthetically Pleasing User Interfaces, Crafting Memorab
 
         </div>
         </div>
+
+        
+
 </section>
         <section id="recommendations-section">
           <h2 class="underlined-h2">Recommendations</h2>
