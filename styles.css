@@ -572,11 +572,9 @@ footer{
     margin-top: 0;
   } */
 #navbar{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   column-gap: 55%;
-   height: 10%;
-   margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 10%;
    /* height: 70px; */
    /* background-color:#131B1A; */
    /* border: 1px solid red; */
@@ -587,31 +585,31 @@ footer{
   height: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
+  /* border: 1px solid red; */
 }
 #hamburger{
+  margin-left: 85%;
   visibility: visible;
-  margin-left: 5vw;
+  /* border: 1px solid red; */
 }
-/* ul li{
-  margin-right: 12px;
-  border: 1px solid red;
-} */
+
 ul {
-  padding: 0;
+  padding: 0.5rem 0;
   /* margin: 0; */
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 5vw;
-  /* visibility: hidden;
-  height: 0; */
+  /* height: 0; */
   /* position: relative;
   width: 100vw; */
-  display: none;
+  /* visibility: hidden; */
+  /* border: 1px solid red; */
 }
 
 ul li{
   display: block;
   margin-bottom: 15px;
+  
 }
 ul li:last-of-type{
   padding-bottom: 15px;
@@ -887,16 +885,24 @@ footer{
 }
 #navbar{
   height: 9%;
-  column-gap: 57.5%;
+  /* border: 1px solid red; */
+  
 }
 
 #hamburger{
- margin-left: 0;
+ margin-left: 80%;
+ /* border: 1px solid red; */
 }
+/* ul li .menu-items, #arrow{
+  display: none;
+} */
+
 ul{
   margin-top: 0;
   margin-bottom: 0;
+
 }
+
 ul li{
   margin-right: 0;
   margin-left: 10vw;
