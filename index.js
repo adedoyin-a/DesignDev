@@ -1,5 +1,7 @@
 
 let icon = document.querySelector("#hamburger");
+let popup = document.querySelector(".popup");
+
 icon.addEventListener("click", toggleHamburger);
 
 function toggleHamburger (){
@@ -18,6 +20,10 @@ function toggleHamburger (){
         document.querySelector("ul").style.display = "none";
     }
 };
+
+popup.addEventListener("click", function(){
+    alert("Sorry, this project is only available to view upon request. Kindly contact me to learn more about it.");
+});
 
 
 
