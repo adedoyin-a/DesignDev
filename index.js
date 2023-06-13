@@ -1,7 +1,7 @@
 let icon = document.querySelector("#hamburger");
 let modal = document.querySelector(".modal");
 let overlay = document.querySelector(".modal-overlay");
-let openModal = document.querySelector(".popup");
+let openModal = document.querySelectorAll(".popup");
 let closeModal = document.querySelector("#close-modal");
 const body = document.querySelector("body");
 // let modal_btn = document.querySelector("contact-btn"); 
