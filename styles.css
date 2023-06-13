@@ -980,8 +980,8 @@ h1{
   padding: 3vh 6vw;
   text-align: center;
   margin: 1vh 10vw;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin-top: 0;
+  margin-bottom: 0;
   /* border: 1px solid orange; */
 }
 .usp-message{
