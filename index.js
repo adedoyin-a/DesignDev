@@ -1,10 +1,10 @@
-
 let icon = document.querySelector("#hamburger");
-let popup = document.querySelector(".popup");
-
-popup.addEventListener("click", function(){
-    alert("Sorry, this project is only available to view upon request. Kindly contact me to learn more about it.");
-});
+let modal = document.querySelector(".modal");
+let overlay = document.querySelector(".modal-overlay");
+let openModal = document.querySelector(".popup");
+let closeModal = document.querySelector("#close-modal");
+const body = document.querySelector("body");
+// let modal_btn = document.querySelector("contact-btn"); 
 
 icon.addEventListener("click", toggleHamburger);
 
@@ -25,8 +25,24 @@ function toggleHamburger (){
     }
 };
 
+openModal.addEventListener("click", popUp);
+
+function popUp (){
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+    body.style.overflow = "hidden";
+    event.preventDefault()
+};
+
+// modal_btn.addEventListener("click", function (){
+//     window.open("mailto:adedoyin.designdev@gmail.com");
+// });
 
 
+closeModal.addEventListener("click", closePopUp);
 
-
-
+function closePopUp (){
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+    body.style.overflow = "auto";
+}
