@@ -107,7 +107,7 @@ main{
   height: 100%;
   z-index: 2;
   background-color: #80808005;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
 }
 .modal{
   /* display:none; */
