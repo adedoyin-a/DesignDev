@@ -95,6 +95,69 @@ main{
   top: 100px;
   z-index: 0;
 }
+
+.modal-overlay{
+  /* display:none; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #80808005;
+  backdrop-filter: blur(5px);
+}
+.modal{
+  /* display:none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  background-color: white;
+  width: 64%;
+  margin:0 20%;
+  padding: 2rem;
+  position: fixed;
+  /* top: 15vh; */
+  z-index: 1000;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.174), 0 6px 20px 0 rgba(0, 0, 0, 0.147);
+}
+.modal i{
+  padding-left: 96%;
+}
+.contact-btn{
+  background-color: #000;
+  /* background-color: #1C4640; */
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  border-radius: 8px;
+  color: #1C4640;
+}
+
+.contact-btn:hover{
+  background-color:#1C4640;
+  /* border: 2px solid #1C4640; */
+}
+
+.contact-btn a{
+  color: #29E7CD;
+  /* color: #1C4640; */
+}
+
+#close-modal:hover{
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
 #welcome-section{
   height: 100vh;
   margin: 0 10vw;
