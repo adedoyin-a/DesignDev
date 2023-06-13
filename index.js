@@ -2,6 +2,10 @@
 let icon = document.querySelector("#hamburger");
 let popup = document.querySelector(".popup");
 
+popup.addEventListener("click", function(){
+    alert("Sorry, this project is only available to view upon request. Kindly contact me to learn more about it.");
+});
+
 icon.addEventListener("click", toggleHamburger);
 
 function toggleHamburger (){
@@ -21,9 +25,7 @@ function toggleHamburger (){
     }
 };
 
-popup.addEventListener("click", function(){
-    alert("Sorry, this project is only available to view upon request. Kindly contact me to learn more about it.");
-});
+
 
 
 
