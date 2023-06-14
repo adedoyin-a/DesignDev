@@ -24,8 +24,10 @@ function toggleHamburger (){
         document.querySelector("ul").style.display = "none";
     }
 };
+for (var i = 0; i < document.querySelectorAll(".popup").length; i++){
+openModal.addEventListener("click","popUp");
+}
 
-openModal.addEventListener("click", popUp);
 
 function popUp (){
     modal.classList.remove("hidden");
