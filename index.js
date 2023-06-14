@@ -26,15 +26,22 @@ function toggleHamburger (){
 };
 for (var i = 0; i < document.querySelectorAll(".popup").length; i++){
 document.querySelectorAll(".popup")[i].addEventListener("click","popUp");
+
+function popUp (){
+
+    modal.classList.remove("hidden");
+
+    overlay.classList.remove("hidden");
+
+    body.style.overflow = "hidden";
+
+    event.preventDefault()
+
+};
 }
 
 
-function popUp (){
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
-    body.style.overflow = "hidden";
-    event.preventDefault()
-};
+
 
 // modal_btn.addEventListener("click", function (){
 //     window.open("mailto:adedoyin.designdev@gmail.com");
