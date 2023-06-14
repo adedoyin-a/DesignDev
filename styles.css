@@ -994,6 +994,10 @@ nav{
   margin-right: 7vw;
   margin-left: -10vw;
 }
+.modal{
+  width: 88%;
+  margin: 0 6%;
+  }
 
 main{
   top: 50px;
