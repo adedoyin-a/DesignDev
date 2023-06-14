@@ -1,7 +1,7 @@
 let icon = document.querySelector("#hamburger");
 let modal = document.querySelector(".modal");
 let overlay = document.querySelector(".modal-overlay");
-let openModal = document.querySelectorAll(".popup");
+// let openModal = document.querySelectorAll(".popup");
 let closeModal = document.querySelector("#close-modal");
 const body = document.querySelector("body");
 // let modal_btn = document.querySelector("contact-btn"); 
@@ -25,7 +25,7 @@ function toggleHamburger (){
     }
 };
 for (var i = 0; i < document.querySelectorAll(".popup").length; i++){
-openModal[i].addEventListener("click","popUp");
+document.querySelectorAll(".popup")[i].addEventListener("click","popUp");
 }
 
 
