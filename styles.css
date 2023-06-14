@@ -690,7 +690,11 @@ ul li:last-of-type{
 ul li .menu-items, #arrow{
   display: none;
 }
-
+.modal{
+  width: 80%;
+  margin:0 10%;
+  top: 16vh;
+}
 main{
   top: 60px;
   /* border: 1px solid blue; */
@@ -996,7 +1000,11 @@ nav{
   margin-right: 7vw;
   margin-left: -10vw;
 }
-
+.modal{
+  width: 88%;
+  margin:0 6%;
+  top: 15vh;
+}
 main{
   top: 50px;
   /* border: 1px solid blue; */
