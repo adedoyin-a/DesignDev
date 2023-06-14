@@ -25,7 +25,7 @@ function toggleHamburger (){
     }
 };
 for (var i = 0; i < document.querySelectorAll(".popup").length; i++){
-openModal.addEventListener("click","popUp");
+openModal[i].addEventListener("click","popUp");
 }
 
 
