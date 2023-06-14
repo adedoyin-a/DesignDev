@@ -35,7 +35,6 @@ ul li{
 ul li .menu-items{
   position: absolute;
   background-color: #070600;
-  /* background-color: #131B1A; */
   padding: 1rem;
 }
 ul li .dropdown-menu .menu-items a{
@@ -81,6 +80,7 @@ ul li a:hover{
   font-size: 1.25rem;
   margin-top: 20px;
   /* display: none; */
+  cursor: pointer;
   visibility: hidden;
 }
 nav{
@@ -96,6 +96,7 @@ main{
   z-index: 0;
 }
 
+
 .modal-overlay{
   /* display:none; */
   position: fixed;
@@ -106,7 +107,7 @@ main{
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: #80808005;
+  background-color: #1716162f;
   backdrop-filter: blur(3px);
 }
 .modal{
@@ -114,22 +115,26 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #000;
+  color: #070600;
   background-color: white;
-  width: 70%;
-  margin:0 15%;
+  width: 64%;
+  margin:0 20%;
   padding: 2rem;
   position: fixed;
-  top: 15vh;
+  /* top: 15vh; */
   z-index: 1000;
   border-radius: 24px;
   box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.174), 0 6px 20px 0 rgba(0, 0, 0, 0.147);
+}
+
+.modal p{
+  color: #303030;
 }
 .modal i{
   padding-left: 96%;
 }
 .contact-btn{
-  background-color: #000;
+  background-color: #070600;
   /* background-color: #1C4640; */
   border-radius: 8px;
   padding: 10px 20px;
@@ -690,10 +695,6 @@ main{
   top: 60px;
   /* border: 1px solid blue; */
 }
-  .modal{
-  width: 80%;
-  margin: 0 10%;
-  }
 #welcome-section{
   height: auto;
   /* border: 1px solid orange; */
@@ -971,13 +972,14 @@ footer{
 ul{
   margin-top: 0;
   margin-bottom: 0;
- display: none;
+  display: none;
 }
 
 ul li{
   margin-right: 0;
   margin-left: 10vw;
   /* font-size: 10px; */
+
 }
 ul li a{
   font-size: 16px;
@@ -994,10 +996,6 @@ nav{
   margin-right: 7vw;
   margin-left: -10vw;
 }
-.modal{
-  width: 88%;
-  margin: 0 6%;
-  }
 
 main{
   top: 50px;
@@ -1045,6 +1043,7 @@ h1{
   padding-bottom: 3vh;
   margin: 0;
   margin-top: 0;
+  
 }
 .usp-container{
   height: auto;
