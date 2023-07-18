@@ -802,9 +802,9 @@ h2{
   margin-bottom: 50px;
 }
 
-.new-grid .project:last-of-type{
+/* .new-grid .project:last-of-type{
   display: none;
-}
+}  */
 
 /* .new-grid .project{
   width: 25.33vw;
